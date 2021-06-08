@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+      integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+      crossorigin="anonymous"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <style>
+      html,
+      body {
+        position: relative;
+        height: 100%;
+      }
+
+      body {
+        background: #eee;
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        color: #000;
+        margin: 0;
+        padding: 0;
+      }
+
+      .swiper-container {
+        width: 100%;
+        height: 800px;
+      }
+
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+      }
+
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    </style>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <header
+      class="
+        navbarr
+        bg-light
+        d-flex
+        justify-content-between
+        align-items-center
+        p-3
+        position-fixed
+        w-100
+      "
+    >
+      <span
+        ><h1 class="text-white"><b>LOGOTIP</b></h1></span
+      >
+      <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse px-5" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link active text-white links h5" href="#home"
+              >Asosiy menyu <span class="sr-only">(current)</span></a
+            >
+            <a class="nav-link text-white links h5" href="#menu"
+              >Milliy taomlar</a
+            >
+            <a class="nav-link text-white links h5" href="#register"
+              >Byurtma Berish</a
+            >
+            <a class="nav-link text-white links h5" href="#about"
+              >Biz haqimizda</a
+            >
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <section
+      data-aos="fade-up"
+      class="home d-flex justify-content-center align-items-center"
+      id="home"
+    >
+      <div class="back"></div>
+      <div class="text text-center">
+        <h1>Bizda Barcha O'zbek Milliy Taomlar</h1>
+        <a class="btn btn-primary btn-md btn-outline-warning" href="#register">
+          Byurtma Berish</a
+        >
+      </div>
+    </section>
+    <div class="swiper-container mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <section id="menu" class="menu text-white">
+            <div data-aos="fade-up" class="container text-center">
+              <h1 class="p-5">Milliy Taomlar</h1>
+              <div class="row">
+                <div class="col-6 col-md-4 col-xl-3">
+                  <div data-aos="fade-right" class="card bg-transparent">
+                    <img
+                      class="border"
+                      src="https://halaldastarkhan.com/wp-content/uploads/2020/06/Website-214.jpg"
+                      alt=""
+                    />
+                    <h4>Osh</h4>
+                    <h4>35 000 so'm</h4>
+                    <a class="byurtma" href="#register">Byurtma Berish</a>
+                  </div>
+                </div>
+                <div class="col-6 col-md-4 col-xl-3">
+                  <div data-aos="zoom-in-up" class="card bg-transparent">
+                    <img
+                      class="border"
+                      src="https://e2.edimdoma.ru/data/recipes/0011/7037/117037-ed4_wide.jpg?1528711045"
+                      alt=""
+                    />
+                    <h4>Mastava</h4>
+                    <h4>25 000 so'm</h4>
+                    <a class="byurtma" href="#register">Byurtma Berish</a>
+                  </div>
+                </div>
+                <div class="col-6 col-md-4 col-xl-3">
+                  <div data-aos="zoom-in-up" class="card bg-transparent">
+                    <img
+                      class="border"
+                      src="https://cdn.momsdish.com/wp-content/uploads/2020/05/The-Best-Shish-Kabob-Recipe-with-Beef-06-scaled.jpg"
+                      alt=""
+                    />
+                    <h4>Kabob</h4>
+                    <h4>40 000 so'm</h4>
+                    <a class="byurtma" href="#register">Byurtma Berish</a>
+                  </div>
+                </div>
+                <div class="col-6 col-md-4 col-xl-3">
+                  <div data-aos="fade-left" class="card bg-transparent">
+                    <img
+                      class="border"
+                      src="https://i.mycdn.me/image?id=861440860803&t=0&plc=MOBILE&tkn=*2Zz8gpV5ixcMMR8UmjoE0Lj7KbQ"
+                      alt=""
+                    />
+                    <h4>Qozon Kabob</h4>
+                    <h4>45 000 so'm</h4>
+                    <a class="byurtma" href="#register">Byurtma Berish</a>
+                  </div>
+                </div>
+                <div class="col-6 col-md-4 col-xl-3">
+                  <div data-aos="fade-right" class="card bg-transparent">
+                    <img
+                      class="border"
+                      src="https://yukber.uz/image/cache/catalog/product/YK6011/6011-700x700.jpg"
+                      alt=""
+                    />
+                    <h4>Jiz</h4>
+                    <h4>40 000 so'm</h4>
+                    <a class="byurtma" href="#register">Byurtma Berish</a>
+                  </div>
+                </div>
+                <div class="col-6 col-md-4 col-xl-3">
+                  <div data-aos="zoom-in-up" class="card bg-transparent">
+                    <img
+                      class="border"
+                      src="https://st3.depositphotos.com/2287637/17678/i/600/depositphotos_176786602-stock-photo-traditional-steamed-dumplings-manty-with.jpg"
+                      alt=""
+                    />
+                    <h4>Manti</h4>
+                    <h4>33 000 so'm</h4>
+                    <a class="byurtma" href="#register">Byurtma Berish</a>
+                  </div>
+                </div>
+                <div class="col-6 col-md-4 col-xl-3">
+                  <div data-aos="zoom-in-up" class="card bg-transparent">
+                    <img
+                      class="border"
+                      src="https://barashkin-vrn.ru/content/uploads/2018/05/chuchvara-varenaya.png"
+                      alt=""
+                    />
+                    <h4>Chuchvara</h4>
+                    <h4>25 000 so'm</h4>
+                    <a class="byurtma" href="#register">Byurtma Berish</a>
+                  </div>
+                </div>
+                <div class="col-6 col-md-4 col-xl-3">
+                  <div data-aos="fade-left" class="card bg-transparent">
+                    <img
+                      class="border"
+                      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTi5lC2HHZx1wx0D3xOp-22iQcxWjkKgMrgkQ&usqp=CAU"
+                      alt=""
+                    />
+                    <h4>Norin</h4>
+                    <h4>30 000 so'm</h4>
+                    <a class="byurtma" href="#register">Byurtma Berish</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+        <!-- slide2 -->
+        <div class="swiper-slide">
+          <section id="menu" class="menu text-white">
+            <div data-aos="fade-up" class="container text-center">
+              <h1 class="p-5">Salatlar</h1>
+              <div class="row">
+                <div class="col-6 col-md-4 col-xl-3">
+                  <div data-aos="fade-right" class="card bg-transparent">
+                    <img
+                      class="border"
+                      src="https://wowcook.net/wp-content/uploads/2019/07/%D0%B8%D1%822-3.jpg"
+                      alt=""
+                    />
+                    <h4>Pamidorli salat</h4>
+                    <h4>5 000 so'm</h4>
+                    <a class="byurtma" href="#register">Byurtma Berish</a>
+                  </div>
+                </div>
+                <div class="col-6 col-md-4 col-xl-3">
+                  <div data-aos="zoom-in-up" class="card bg-transparent">
+                    <img
+                      class="border"
+                      src="https://www.gazeta.uz/media/img/2020/07/vdZbrJ15949914340619_b.jpg"
+                      alt=""
+                    />
+                    <h4>Karamli salat</h4>
+                    <h4>5 000 so'm</h4>
+                    <a class="byurtma" href="#register">Byurtma Berish</a>
+                  </div>
+                </div>
+                <div class="col-6 col-md-4 col-xl-3">
+                  <div data-aos="zoom-in-up" class="card bg-transparent">
+                    <img
+                      class="border"
+                      src="https://art-lunch.ru/content/uploads/2021/02/salat-iz-pecheni-treski-000.jpg"
+                      alt=""
+                    />
+                    <h4>Aliviya</h4>
+                    <h4>15 000 so'm</h4>
+                    <a class="byurtma" href="#register">Byurtma Berish</a>
+                  </div>
+                </div>
+                <div class="col-6 col-md-4 col-xl-3">
+                  <div data-aos="fade-left" class="card bg-transparent">
+                    <img
+                      class="border"
+                      src="https://zira.uz/wp-content/uploads/2019/03/salat-s-sirom-3.jpg"
+                      alt=""
+                    />
+                    <h4>Smak salati</h4>
+                    <h4>15 000 so'm</h4>
+                    <a class="byurtma" href="#register">Byurtma Berish</a>
+                  </div>
+                </div>
+                <div class="col-6 col-md-4 col-xl-3">
+                  <div data-aos="fade-right" class="card bg-transparent">
+                    <img
+                      class="border"
+                      src="https://i.ytimg.com/vi/V53iEwkU3Ls/maxresdefault.jpg"
+                      alt=""
+                    />
+                    <h4>Fransuzkiy salat</h4>
+                    <h4>20 000 so'm</h4>
+                    <a class="byurtma" href="#register">Byurtma Berish</a>
+                  </div>
+                </div>
+                <div class="col-6 col-md-4 col-xl-3">
+                  <div data-aos="zoom-in-up" class="card bg-transparent">
+                    <img
+                      class="border"
+                      src="https://i.ytimg.com/vi/tgJxCt26nA8/maxresdefault.jpg"
+                      alt=""
+                    />
+                    <h4>Mevali salat</h4>
+                    <h4>20 000 so'm</h4>
+                    <a class="byurtma" href="#register">Byurtma Berish</a>
+                  </div>
+                </div>
+                <div class="col-6 col-md-4 col-xl-3">
+                  <div data-aos="zoom-in-up" class="card bg-transparent">
+                    <img
+                      class="border"
+                      src="https://st4.depositphotos.com/5510056/19825/i/600/depositphotos_198255106-stock-photo-traditional-asian-stir-fry-salad.jpg"
+                      alt=""
+                    />
+                    <h4>Kareyskiy salat</h4>
+                    <h4>25 000 so'm</h4>
+                    <a class="byurtma" href="#register">Byurtma Berish</a>
+                  </div>
+                </div>
+                <div class="col-6 col-md-4 col-xl-3">
+                  <div data-aos="fade-left" class="card bg-transparent">
+                    <img
+                      class="border"
+                      src="https://i2.wp.com/twilight-saga.ru/wp-content/uploads/recept-salat-s-karbonatom_1.jpg"
+                      alt=""
+                    />
+                    <h4>Go'shtli salat</h4>
+                    <h4>30 000 so'm</h4>
+                    <a class="byurtma" href="#register">Byurtma Berish</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+        <div class="swiper-slide">
+          <section id="menu" class="menu text-white">
+            <div data-aos="fade-up" class="container text-center">
+              <h1 class="p-5">Ichimliklar</h1>
+              <div class="row">
+                <div class="col-6 col-md-4 col-xl-3">
+                  <div data-aos="fade-right" class="card bg-transparent">
+                    <img
+                      class="border"
+                      src="https://korzinka.uz/wp-content/uploads/2017/08/a1f210f1265aa33797009-500x334-1-500x334.jpg"
+                      alt=""
+                    />
+                    <h4>Shaftolili sharbat</h4>
+                    <h4>5 000 so'm</h4>
+                    <a class="byurtma" href="#register">Byurtma Berish</a>
+                  </div>
+                </div>
+                <div class="col-6 col-md-4 col-xl-3">
+                  <div data-aos="zoom-in-up" class="card bg-transparent">
+                    <img
+                      class="border"
+                      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5xy87W2mrPow4bLCsmpn_axJUA59TFzFaaQ&usqp=CAU"
+                      alt=""
+                    />
+                    <h4>Olmali</h4>
+                    <h4>10 000 so'm</h4>
+                    <a class="byurtma" href="#register">Byurtma Berish</a>
+                  </div>
+                </div>
+                <div class="col-6 col-md-4 col-xl-3">
+                  <div data-aos="fade-left" class="card bg-transparent">
+                    <img
+                      class="border"
+                      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlSgU4kWqvxKx03yBF2l2q_gH-7kcmUog-sA&usqp=CAU"
+                      alt=""
+                    />
+                    <h4>Limonli sharbat</h4>
+                    <h4>15 000 so'm</h4>
+                    <a class="byurtma" href="#register">Byurtma Berish</a>
+                  </div>
+                </div>
+                <div class="col-6 col-md-4 col-xl-3">
+                  <div data-aos="zoom-in-up" class="card bg-transparent">
+                    <img
+                      class="border"
+                      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQT9e6QNb9iZ0d97wMO8eCXmmGtvKILWfUDOw&usqp=CAU"
+                      alt=""
+                    />
+                    <h4>Apelsinli sharbat</h4>
+                    <h4>7 000 so'm</h4>
+                    <a class="byurtma" href="#register">Byurtma Berish</a>
+                  </div>
+                </div>
+
+                <div class="col-6 col-md-4 col-xl-3">
+                  <div data-aos="fade-right" class="card bg-transparent">
+                    <img
+                      class="border"
+                      src="data:image/jpeg;base64,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"
+                      alt=""
+                    />
+                    <h4>Ananasli sharbat</h4>
+                    <h4>20 000 so'm</h4>
+                    <a class="byurtma" href="#register">Byurtma Berish</a>
+                  </div>
+                </div>
+                <div class="col-6 col-md-4 col-xl-3">
+                  <div data-aos="zoom-in-up" class="card bg-transparent">
+                    <img
+                      class="border"
+                      src="https://zira.uz/wp-content/uploads/2020/05/mokhito-400x400.jpg"
+                      alt=""
+                    />
+                    <h4>Qulpnaylik sharbat</h4>
+                    <h4>10 000 so'm</h4>
+                    <a class="byurtma" href="#register">Byurtma Berish</a>
+                  </div>
+                </div>
+                <div class="col-6 col-md-4 col-xl-3">
+                  <div data-aos="zoom-in-up" class="card bg-transparent">
+                    <img
+                      class="border"
+                      src="https://i.mycdn.me/i?r=AzEPZsRbOZEKgBhR0XGMT1RkgYVmUBPqVObiNxcA-0RMwqaKTM5SRkZCeTgDn6uOyic"
+                      alt=""
+                    />
+                    <h4>Anorli sharbat</h4>
+                    <h4>12 000 so'm</h4>
+                    <a class="byurtma" href="#register">Byurtma Berish</a>
+                  </div>
+                </div>
+                <div class="col-6 col-md-4 col-xl-3">
+                  <div data-aos="fade-left" class="card bg-transparent">
+                    <img
+                      class="border"
+                      src="https://st.vkuso.ru/data/cache/thumb/e2/9bb6613488db5e2_660x440.jpg"
+                      alt=""
+                    />
+                    <h4>Kivili sharbat</h4>
+                    <h4>30 000 so'm</h4>
+                    <a class="byurtma" href="#register">Byurtma Berish</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+        <!-- <div class="swiper-slide">Slide 4</div> -->
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+    <section
+      data-aos="zoom-out-down"
+      class="
+        register
+        d-flex
+        align-items-center
+        justify-content-center
+        flex-wrap
+      "
+      id="register"
+    >
+      <h1 class="w-100 text-center py-5"><b>Buyurtma berish</b></h1>
+      <p></p>
+      <form>
+        <div class="form-group">
+          <label class="h5" for="exampleInputEmail1"
+            >Ismingiz va familyangizni kiriting</label
+          >
+          <input
+            placeholder="ism,familiya"
+            type="text"
+            class="email form-control"
+            id="exampleInputEmail1"
+            aria-describedby="emailHelp"
+          />
+        </div>
+        <div class="form-group">
+          <label class="h5" for="exampleInputPassword1"
+            >Siz turgan stol raqami</label
+          >
+          <input
+            type="number"
+            class="email form-control"
+            required
+            placeholder="Stolingiz raqamini kiriting"
+            id="exampleInputPassword1"
+          />
+        </div>
+
+        <div class="text-center py-3">
+          <button
+            type="submit"
+            class="btn btn-primary btn-md btn-outline-warning"
+          >
+            Qabul qilish
+          </button>
+        </div>
+      </form>
+    </section>
+    <footer class="bg-secondary" id="finish">
+      <div class="container">
+        <h1 class="text-center">
+          Bizning Xizmatlardan Foydalanganingiz Uchun Raxmat :)
+        </h1>
+        <hr class="bg-warning my-4" />
+        <div class="row">
+          <div class="col-lg-7" data-aos="fade-right" data-aos-duration="2000">
+            <h1 class="mt-5">
+              Joylashuv <i class="fas fa-map-marker-alt"></i>
+            </h1>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2996.909662845725!2d69.2470948152281!3d41.31082880870103!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae8bc59eb925ef%3A0x97de08db63a874d2!2sTashkent%20City!5e0!3m2!1sru!2s!4v1620893842859!5m2!1sru!2s"
+              width="600"
+              class="map"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+            ></iframe>
+          </div>
+          <div
+            class="col-lg-5 d-flex align-items-center"
+            data-aos="fade-left"
+            data-aos-duration="2000"
+          >
+            <div class="text-center ml-5">
+              <h2>Bizning xizmatlardan foydalanganingiz uchun raxmat :)</h2>
+              <br />
+              <h2>Biz bilan bog'lanish:</h2>
+              <h3 class="my-3">+99897 766 44 88</h3>
+              <h3>+99899 640 47 71</h3>
+
+              <div
+                class="
+                  container
+                  d-flex
+                  justify-content-center
+                  align-items-center
+                "
+              ></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        pagination: {
+          el: ".swiper-pagination",
+          dynamicBullets: true,
+        },
+      });
+    </script>
+  </body>
+</html>
