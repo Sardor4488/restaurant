@@ -4,6 +4,7 @@ html {
 body {
   padding: 0%;
   margin: 0%;
+  overflow-x: hidden;
 }
 
 * {
@@ -82,6 +83,7 @@ a:hover {
   border-radius: 8px;
   margin: 20px;
   height: 300px;
+  min-height: 300px;
 }
 
 .card img {
@@ -94,6 +96,13 @@ a:hover {
   .menu {
     height: 1100px;
   }
+}
+@media screen and (max-width: 500px) {
+  .map{
+    width: 100% !important;
+  }
+  .register{
+    }
 }
 @media screen and (max-width: 766px) {
   .menu {
